@@ -6,8 +6,10 @@ class Zoologico:
     def agregarZonas(self, zona):
         self.zonas.append(zona)
     def cantidadTotalAnimales(self):
-        from zooAnimales.animal import Animal
-        return Animal.totalAnimales
+        retorno=0
+        for i in self.zonas:
+            retorno+=(i.cantidadAnimales())
+        return retorno
     def getZona(self):
         return self.zonas
     def getNombre(self):
