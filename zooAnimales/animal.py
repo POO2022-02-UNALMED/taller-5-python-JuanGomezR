@@ -18,7 +18,7 @@ class Animal:
         from zooAnimales.reptil import Reptil
         from zooAnimales.pez import Pez
         retorno=""
-        resultado=("Mamiferos: ",Mamifero.cantidadMamiferos(),"\n","Aves: ", Ave.cantidadAves(),"\nReptiles: ", Reptil.cantidadReptiles(),"\nPeces: ", Pez.cantidadPeces(),"\nAnfibios: ", Anfibio.cantidadAnfibios())
+        resultado=("Mamiferos : ",Mamifero.cantidadMamiferos(),"\n","Aves : ", Ave.cantidadAves(),"\nReptiles : ", Reptil.cantidadReptiles(),"\nPeces : ", Pez.cantidadPeces(),"\nAnfibios : ", Anfibio.cantidadAnfibios())
         for i in resultado:
             retorno+=str(i)
         return retorno
