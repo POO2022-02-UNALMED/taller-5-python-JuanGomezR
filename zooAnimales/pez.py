@@ -9,7 +9,7 @@ class Pez(Animal):
         self.colorEscamas=colorEscamas
         self.cantidadAletas=cantidadAletas
         Pez.listado.append(self)
-    def cantidadMamiferos():
+    def cantidadPeces():
         return len(Pez.listado)
     def crearSalmon(nombre, edad, genero):
         Pez(nombre, edad, "oceano", genero, "rojo", 6)

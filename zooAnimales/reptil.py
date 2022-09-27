@@ -9,7 +9,7 @@ class Reptil(Animal):
         self.colorEscamas=colorEscamas
         self.largoCola=largoCola
         Reptil.listado.append(self)
-    def cantidadMamiferos():
+    def cantidadReptiles():
         return len(Reptil.listado)
     def crearSerpiente(nombre, edad, genero):
         Reptil(nombre, edad, "jungla", genero, "blanco", 1)

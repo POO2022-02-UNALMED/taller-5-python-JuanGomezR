@@ -9,7 +9,7 @@ class Anfibio(Animal):
         self.colorPiel=colorPiel
         self.venenoso=venenoso
         Anfibio.listado.append(self)
-    def cantidadMamiferos():
+    def cantidadAnfibios():
         return len(Anfibio.listado)
     def crearRana(nombre, edad, genero):
         Anfibio(nombre, edad, "selva", genero, "rojo", True)

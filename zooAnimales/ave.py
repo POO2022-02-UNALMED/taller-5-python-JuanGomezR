@@ -8,7 +8,7 @@ class Ave(Animal):
         super().__init__(nombre, edad, habitat, genero)
         self.colorPlumas=colorPlumas
         Ave.listado.append(self)
-    def cantidadMamiferos():
+    def cantidadAves():
         return len(Ave.listado)
     def crearHalcon(nombre, edad, genero):
         Ave(nombre, edad, "montanas", genero, "cafe glorioso")
