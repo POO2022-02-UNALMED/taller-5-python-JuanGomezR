@@ -17,11 +17,11 @@ class Animal:
         from zooAnimales.anfibio import Anfibio
         from zooAnimales.reptil import Reptil
         from zooAnimales.pez import Pez
-        resultado=("Mamiferos: ",Mamifero.cantidadMamiferos(),"\nAves: ", Ave.cantidadAves(),"\nReptiles: ", Reptil.cantidadReptiles(),"\nPeces: ", Pez.cantidadPeces(),"\nAnfibios: ", Anfibio.cantidadAnfibios())
         retorno=""
+        resultado=("Mamiferos: ",Mamifero.cantidadMamiferos(),"\n","Aves: ", Ave.cantidadAves(),"\nReptiles: ", Reptil.cantidadReptiles(),"\nPeces: ", Pez.cantidadPeces(),"\nAnfibios: ", Anfibio.cantidadAnfibios())
         for i in resultado:
-                retorno+=str(i)
-        return str(resultado)
+            retorno+=str(i)
+        return retorno
     def toString(self):
         if self.zona=="none":
             retorno=""
