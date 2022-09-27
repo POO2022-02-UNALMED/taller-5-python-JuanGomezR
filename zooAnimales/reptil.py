@@ -10,7 +10,7 @@ class Reptil(Animal):
         self.largoCola=largoCola
         Reptil.listado.append(self)
     def cantidadMamiferos():
-        return Reptil.listado.length()
+        return len(Reptil.listado)
     def crearSerpiente(nombre, edad, genero):
         Reptil(nombre, edad, "jungla", genero, "blanco", 1)
         Reptil.serpientes+=1

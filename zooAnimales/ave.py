@@ -9,7 +9,7 @@ class Ave(Animal):
         self.colorPlumas=colorPlumas
         Ave.listado.append(self)
     def cantidadMamiferos():
-        return Ave.listado.length()
+        return len(Ave.listado)
     def crearHalcon(nombre, edad, genero):
         Ave(nombre, edad, "montanas", genero, "cafe glorioso")
         Ave.halcones+=1

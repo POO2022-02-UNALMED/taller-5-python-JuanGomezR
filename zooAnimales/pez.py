@@ -10,7 +10,7 @@ class Pez(Animal):
         self.cantidadAletas=cantidadAletas
         Pez.listado.append(self)
     def cantidadMamiferos():
-        return Pez.listado.length()
+        return len(Pez.listado)
     def crearSalmon(nombre, edad, genero):
         Pez(nombre, edad, "oceano", genero, "rojo", 6)
         Pez.salmones+=1
