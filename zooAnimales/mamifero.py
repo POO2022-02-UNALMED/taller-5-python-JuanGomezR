@@ -12,11 +12,11 @@ class Mamifero(Animal):
     def cantidadMamiferos():
         return len(Mamifero.listado)
     def crearCaballo(nombre, edad, genero):
-        Mamifero(nombre, edad, "pradera", genero, True, 4)
         Mamifero.caballos+=1
+        return Mamifero(nombre, edad, "pradera", genero, True, 4)
     def crearLeon(nombre, edad, genero):
-        Mamifero(nombre, edad, "selva", genero, True, 4)
         Mamifero.leones+=1
+        return Mamifero(nombre, edad, "selva", genero, True, 4)
     def isPelaje(self):
         return self.pelaje
     def getPatas(self):

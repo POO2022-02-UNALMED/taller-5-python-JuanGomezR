@@ -21,7 +21,7 @@ class Animal:
         retorno=""
         for i in resultado:
                 retorno+=str(i)
-        return resultado
+        return str(resultado)
     def toString(self):
         if self.zona=="none":
             retorno=""

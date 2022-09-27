@@ -12,11 +12,11 @@ class Anfibio(Animal):
     def cantidadAnfibios():
         return len(Anfibio.listado)
     def crearRana(nombre, edad, genero):
-        Anfibio(nombre, edad, "selva", genero, "rojo", True)
         Anfibio.ranas+=1
+        return Anfibio(nombre, edad, "selva", genero, "rojo", True)
     def crearSalamandra(nombre, edad, genero):
-        Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
         Anfibio.salamandras+=1
+        return Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
     def movimiento():
         return "saltar"
     def getColorPiel(self):

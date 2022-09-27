@@ -11,11 +11,11 @@ class Ave(Animal):
     def cantidadAves():
         return len(Ave.listado)
     def crearHalcon(nombre, edad, genero):
-        Ave(nombre, edad, "montanas", genero, "cafe glorioso")
         Ave.halcones+=1
+        return Ave(nombre, edad, "montanas", genero, "cafe glorioso")
     def crearAguila(nombre, edad, genero):
-        Ave(nombre, edad, "montanas", genero, "blanco y amarillo")
         Ave.aguilas+=1
+        return Ave(nombre, edad, "montanas", genero, "blanco y amarillo")
     def movimiento():
         return "volar"
     def getColorPlumas(self):
