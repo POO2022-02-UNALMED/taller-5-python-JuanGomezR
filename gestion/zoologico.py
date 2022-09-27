@@ -7,7 +7,7 @@ class Zoologico:
         self.zonas.append(zona)
     def cantidadTotalAnimales(self):
         from zooAnimales.animal import Animal
-        return Animal.totalAnimales()
+        return Animal.totalAnimales
     def getZona(self):
         return self.zonas
     def getNombre(self):

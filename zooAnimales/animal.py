@@ -1,4 +1,4 @@
-from gestion.zona import Zona
+#from gestion.zona import Zona
 
 class Animal:
     totalAnimales=0
@@ -18,19 +18,20 @@ class Animal:
         from zooAnimales.reptil import Reptil
         from zooAnimales.pez import Pez
         resultado=("Mamiferos: ",Mamifero.cantidadMamiferos(),"\nAves: ", Ave.cantidadAves(),"\nReptiles: ", Reptil.cantidadReptiles(),"\nPeces: ", Pez.cantidadPeces(),"\nAnfibios: ", Anfibio.cantidadAnfibios)
+        retorno=""
         for i in resultado:
                 retorno+=str(i)
         return resultado
     def toString(self):
         if self.zona=="none":
             retorno=""
-            string=("mi nombre es ",self.nombre,", tengo una edad de ",self.edad,", habito en ",self.habitat," y mi genero es ",self.genero)
+            string=("Mi nombre es ",self.nombre,", tengo una edad de ",self.edad,", habito en ",self.habitat," y mi genero es ",self.genero)
             for i in string:
                 retorno+=str(i)
             return retorno
         else:
             retorno=""
-            string=("mi nombre es ",self.nombre,", tengo una edad de ",self.edad,", habito en ",self.habitat," y mi genero es ",self.genero,", la zona en la que me ubico es ",self.zona,", en el ",self.zona.zoo)
+            string=("Mi nombre es ",self.nombre,", tengo una edad de ",self.edad,", habito en ",self.habitat," y mi genero es ",self.genero,", la zona en la que me ubico es ",self.zona,", en el ",self.zona.zoo)
             for i in string:
                 retorno+=str(i)
             return retorno
