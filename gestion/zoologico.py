@@ -9,7 +9,9 @@ class Zoologico:
         total=0
         for i in self.zonas:
             from gestion.zona import Zona
-            total+=i.cantidadAnimales
+            total+=i.cantidadAnimales()
         return total
     def getZona(self):
         return self.zonas
+    def getNombre(self):
+        return self.nombre

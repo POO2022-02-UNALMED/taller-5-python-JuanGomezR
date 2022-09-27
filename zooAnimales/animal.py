@@ -12,11 +12,11 @@ class Animal:
     def movimiento():
         return "desplazarse"
     def totalPorTipo():
-        from zooAnimales import Mamifero
-        from zooAnimales import Ave
-        from zooAnimales import Anfibio
-        from zooAnimales import Reptil
-        from zooAnimales import Pez
+        from zooAnimales.mamifero import Mamifero
+        from zooAnimales.ave import Ave
+        from zooAnimales.anfibio import Anfibio
+        from zooAnimales.reptil import Reptil
+        from zooAnimales.pez import Pez
         resultado=("Mamiferos: ",Mamifero.cantidadMamiferos(),"\nAves: ", Ave.cantidadAves(),"\nReptiles: ", Reptil.cantidadReptiles(),"\nPeces: ", Pez.cantidadPeces(),"\nAnfibios: ", Anfibio.cantidadAnfibios)
         return resultado
     def toString(self):
