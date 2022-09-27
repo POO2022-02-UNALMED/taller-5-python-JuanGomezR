@@ -1,7 +1,7 @@
 from gestion.zoologico import Zoologico
 
 class Zona:
-    def __init__(self, nombre, zoo="none", animales=[]):
+    def __init__(self, nombre, zoo=None, animales=[]):
         self.nombre=nombre
         self.zoo=zoo
         self.animales=animales
